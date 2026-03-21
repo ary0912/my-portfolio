@@ -135,13 +135,13 @@ const WhatIDo = () => {
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Node.js</div>
-                <div className="what-tags">NestJS</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">MongoDB</div>
+                <div className="what-tags">Java</div>
                 <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">MySQL</div>
+                <div className="what-tags">Supabase</div>
                 <div className="what-tags">REST APIs</div>
-                <div className="what-tags">Microservices</div>
-                <div className="what-tags">Python</div>
+                <div className="what-tags">Docker</div>
+                <div className="what-tags">Git</div>
               </div>
               <div className="what-arrow"></div>
             </div>

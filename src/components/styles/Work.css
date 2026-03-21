@@ -42,9 +42,11 @@
 
 .carousel-slide {
   min-width: 100%;
+  width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 50px 0;
+  overflow: hidden;
 }
 
 .carousel-content {
@@ -112,6 +114,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 0;
 }
 
 /* ── Navigation Arrows ── */

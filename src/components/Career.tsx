@@ -15,43 +15,50 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h4>Full Stack Software Developer</h4>
+                <h5>Bizumi</h5>
               </div>
-              <h3>2020</h3>
+              <h3>2026</h3>
             </div>
             <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
+              Developed a full-stack web application by translating Figma designs into reusable front-end components using
+              FlutterFlow, React, and integrating them with RESTful APIs and PostgreSQL-backed services.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
+                <h4>Technical Lead / Web Application Developer</h4>
+                <h5>Concussion Toolkit</h5>
               </div>
-              <h3>2021</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
+              Constructed a digital concussion recovery management web application used by 10+ universities. Designed structured data collection workflows backed by PostgreSQL.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
+                <h4>Frontend Developer Intern</h4>
+                <h5>E Connect Solutions Pvt. Ltd.</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2024</h3>
             </div>
             <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
+              Optimised front-end interfaces for the RAJ-SIMS web application with React & Material-UI, improving usability for 79+ departments resulting in significant improvement in load times.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Full Stack Developer Intern</h4>
+                <h5>ECCube Open Lab</h5>
+              </div>
+              <h3>2023</h3>
+            </div>
+            <p>
+              Developed Java backend services and RESTful APIs for PostgreSQL/MySQL web applications. Built scalable containerized auth microservices and automated CI/CD workflows.
             </p>
           </div>
         </div>
