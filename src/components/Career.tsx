@@ -61,6 +61,18 @@ const Career = () => {
               Developed Java backend services and RESTful APIs for PostgreSQL/MySQL web applications. Built scalable containerized auth microservices and automated CI/CD workflows.
             </p>
           </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Full Stack Web Developer (Freelance)</h4>
+                <h5>Self-Employed</h5>
+              </div>
+              <h3>2020 - 2022</h3>
+            </div>
+            <p>
+              Delivered 5+ full-stack web platforms for educational institutions and small businesses, improving user engagement by 20–30%. Designed responsive UI/UX and SEO-optimized business sites, including e-commerce platforms with secure Stripe/Razorpay integrations. Optimized frontend rendering and API interactions to reduce load times by 30–40% while managing the full development lifecycle from requirement gathering to deployment.
+            </p>
+          </div>
         </div>
       </div>
     </div>
