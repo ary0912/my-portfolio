@@ -32,7 +32,7 @@ const projects: Project[] = [
       "Reduced dataset onboarding effort by 100% and enabled scalable clinical data analysis.",
     tools: "Next.js, FastAPI, PostgreSQL, Pandas",
     features: ["Full-Stack", "Data Engineering", "Analytics"],
-    image: "/images/open-trials.png",
+    image: "/images/1.png",
     live: "https://open-trial-platform.vercel.app/",
     github: "https://github.com/ary0912/open-trial-platform",
   },
