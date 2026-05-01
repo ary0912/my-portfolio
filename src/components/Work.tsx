@@ -5,131 +5,160 @@ import { MdArrowBack, MdArrowForward, MdArrowOutward } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { FaBehance } from "react-icons/fa6";
 
-const projects = [
+interface Project {
+  title: string;
+  category: string;
+  description: string;
+  impact?: string;
+  tools: string;
+  features?: string[];
+  image: string;
+  live?: string;
+  github?: string;
+  behance?: string;
+}
+
+const projects: Project[] = [
+  // ======================
+  // 🔥 FEATURED PROJECTS
+  // ======================
+
   {
     title: "OpenTrials Platform",
     category: "Clinical Analytics Dashboard (2026)",
-    description: "Built a full-stack clinical research web application to ingest and analyse schema-agnostic CSV datasets.",
-    tools: "Next.js, FastAPI, PostgreSQL, Pandas, SQLAlchemy",
-    image: "/images/1.png",
+    description:
+      "Full-stack platform for analysing schema-agnostic clinical datasets with dynamic analytics dashboards.",
+    impact:
+      "Reduced dataset onboarding effort by 100% and enabled scalable clinical data analysis.",
+    tools: "Next.js, FastAPI, PostgreSQL, Pandas",
+    features: ["Full-Stack", "Data Engineering", "Analytics"],
+    image: "/images/open-trials.png",
     live: "https://open-trial-platform.vercel.app/",
     github: "https://github.com/ary0912/open-trial-platform",
   },
+
   {
     title: "EcoDash",
-    category: "Sustainability Dashboard (2026)",
-    description: "Designed a responsive analytics dashboard to visualise environmental metrics like carbon emissions and energy usage.",
+    category: "Sustainability Analytics Dashboard (2026)",
+    description:
+      "Interactive dashboard to track carbon emissions, energy usage, and sustainability metrics.",
+    impact:
+      "Improved decision-making through real-time environmental data visualisation.",
     tools: "React, TypeScript, Tailwind, Recharts",
-    image: "/images/sapphire.png",
+    features: ["UI/UX", "Data Viz", "ESG"],
+    image: "/images/ecodash.png",
     live: "https://eco-dash-2.vercel.app/",
     github: "https://github.com/ary0912/EcoDash",
   },
+
   {
-    title: "MoveWell",
-    category: "Health Assessment Platform (Jan 2026)",
-    description: "Frontend-first health assessment platform transforming complex pain and mobility inputs into accessible dashboards.",
-    tools: "React, TypeScript, Tailwind CSS, Recharts",
-    image: "/images/Maxlife.png",
-    live: "https://movewell2.vercel.app/",
-    github: "https://github.com/ary0912/movewell",
+    title: "Campaign Experience Dashboard",
+    category: "Interactive Analytics Platform (2026)",
+    description:
+      "Scroll-driven storytelling dashboard transforming static campaign reports into interactive experiences.",
+    impact:
+      "Increased user engagement and insight clarity through motion-driven UI.",
+    tools: "Next.js, TypeScript, GSAP, Tailwind",
+    features: ["Animations", "Storytelling UI"],
+    image: "/images/campaign.png",
+    live: "https://cedstats.vercel.app/",
   },
+
   {
     title: "SignalScope",
     category: "Real-Time Telemetry Monitor (2026)",
-    description: "Developed a real-time telemetry monitoring interface with interactive time-series visualisations and anomaly detection.",
-    tools: "React, TypeScript, WebSocket Streaming",
-    image: "/images/bond.png",
+    description:
+      "Real-time monitoring interface with WebSocket streaming and anomaly detection.",
+    impact:
+      "Enabled instant anomaly detection through live signal visualisation.",
+    tools: "React, TypeScript, WebSockets",
+    features: ["Real-Time", "Streaming"],
+    image: "/images/signalscope.png",
     live: "https://telemetry-monitor-bx3tjnnix-ary0912s-projects.vercel.app/",
     github: "https://github.com/ary0912/telemetry-monitor",
   },
+
   {
-    title: "Environmental Risk Intelligence Platform",
-    category: "Risk Analysis Backend (2026)",
-    description: "Engineered a scalable backend platform to analyze environmental datasets and compute ecological risk scores.",
-    tools: "Python, FastAPI, REST APIs, Docker, Pytest",
-    image: "/images/radix.png",
+    title: "MoveWell",
+    category: "Health Assessment Platform (2026)",
+    description:
+      "Accessible health dashboard transforming complex mobility inputs into intuitive insights.",
+    impact:
+      "Reduced cognitive load through structured UX and WCAG accessibility.",
+    tools: "React, TypeScript, Tailwind",
+    features: ["Accessibility", "UX"],
+    image: "/images/movewell.png",
+    live: "https://movewell2.vercel.app/",
+    github: "https://github.com/ary0912/movewell",
+  },
+
+  {
+    title: "Environmental Risk Platform",
+    category: "Backend Risk Analysis System (2026)",
+    description:
+      "Backend system for analysing environmental data and computing ecological risk scores.",
+    impact:
+      "Built scalable API architecture for environmental intelligence systems.",
+    tools: "FastAPI, Docker, REST APIs",
+    features: ["Backend", "API Design"],
+    image: "/images/env-risk.png",
     live: "https://environmental-risk-platform.vercel.app",
     github: "https://github.com/ary0912/environmental-risk-platform",
   },
+
+  // ======================
+  // 🧠 AI / RESEARCH PROJECTS
+  // ======================
+
   {
-    title: "Socio-Economic Clustering & Forecasting",
-    category: "Forecasting Model (May 2025)",
-    description: "Analyzed data from 33,000+ LSOAs using PCA/t-SNE and developed Bayesian models to forecast WFH trends.",
-    tools: "PyMC3, Scikit-learn, PCA, t-SNE, GLM",
-    image: "/images/Solidx.png",
-    github: "https://github.com/ary0912/WFH_Dashboard",
+    title: "Eye Movement Cognitive Load Analysis",
+    category: "Deep Learning Dissertation (2025)",
+    description:
+      "End-to-end pipeline analysing eye-tracking data to classify cognitive load using engineered gaze features.",
+    impact:
+      "Achieved 98.8% accuracy using Hybrid TCN + ViT with strong generalisation across participants.",
+    tools: "Python, Deep Learning, SHAP, Grad-CAM++",
+    features: ["Deep Learning", "Time Series", "Explainability"],
+    image: "/images/eye-tracking.png",
   },
-  {
-    title: "Morphological Diversification",
-    category: "Machine Learning / Clustering (May 2025)",
-    description: "Analyzed 3M+ morphometric time-series points to detect evolutionary patterns in plankton using unsupervised learning.",
-    tools: "Python, Pandas, KMeans, SciPy",
-    image: "/images/radix.png",
-    github: "https://github.com/ary0912/foraminifera-morpho-evolution",
-  },
-  {
-    title: "Word Similarity Clustering",
-    category: "NLP Pipeline (Apr 2025)",
-    description: "Spearheaded an NLP pipeline to semantically cluster frequent nouns from classic novels using graph and KMeans clustering.",
-    tools: "Python, NLP, NLTK, NetworkX, KMeans",
-    image: "/images/bond.png",
-    github: "https://github.com/ary0912/semantic-clustering-classic-novels",
-  },
-  {
-    title: "Climate Sentiment Classification",
-    category: "Sentiment Analysis & NER (Apr 2025)",
-    description: "Developed sentiment classifiers for ESG financial disclosures and fine-tuned BERT for climate-related Twitter NER.",
-    tools: "Python, BERTopic, HuggingFace, BERT",
-    image: "/images/sapphire.png",
-    github: "https://github.com/ary0912/climate-ner-transformer-nlp",
-  },
+
   {
     title: "EcoVision",
-    category: "Computer Vision System (Feb 2025)",
-    description: "Smart environment system integrating real-time trash segregation, waste detection, and crowd density analysis.",
-    tools: "Python, OpenCV, YOLOv5, IoT, Flask",
-    image: "/images/Maxlife.png",
+    category: "Computer Vision System (2025)",
+    description:
+      "Smart system for waste detection and crowd density analysis using computer vision.",
+    impact:
+      "Enabled real-time environmental monitoring for public safety systems.",
+    tools: "Python, OpenCV, YOLOv5",
+    features: ["Computer Vision", "Real-Time"],
+    image: "/images/ecovision.png",
     github: "https://github.com/anirudh24471/BrisHack25",
   },
-  {
-    title: "MyTravel",
-    category: "Serverless Blogging MVP (Dec 2024)",
-    description: "Architected and deployed a serverless blogging MVP using AWS services including Lambda, S3, and Cognito.",
-    tools: "AWS Lambda, S3, Cognito, API Gateway",
-    image: "/images/Solidx.png",
-    github: "https://github.com/ary0912/MyTravel",
-  },
-  {
-    title: "GoCart",
-    category: "Peer-to-Peer Platform MVP (Jun 2024)",
-    description: "Designed and prototyped a secure peer-to-peer platform in Figma enabling verified exchange of physical goods.",
-    tools: "Figma, UX Design, Prototyping",
-    image: "/images/radix.png",
-    behance: "https://www.behance.net/gallery/200088939/The-Grocery-App",
-  },
+
   {
     title: "Knee Arthritis Detection",
-    category: "Deep Learning / CNN (Nov 2023)",
-    description: "Analyzed convolutional neural networks for arthritis prediction from X-rays, boosting classification accuracy to 97%.",
-    tools: "TensorFlow, EfficientNetB5, Medical Imaging",
-    image: "/images/bond.png",
+    category: "Deep Learning Medical Imaging (2023)",
+    description:
+      "CNN-based system for arthritis detection from X-rays with optimised preprocessing.",
+    impact:
+      "Improved model accuracy from 40% to 97%.",
+    tools: "TensorFlow, EfficientNet",
+    features: ["CNN", "Medical AI"],
+    image: "/images/knee.png",
     github: "https://github.com/ary0912/Image-Augumentation-in-Knee-Arthritis",
   },
+
   {
-    title: "Property Portal",
-    category: "Real Estate Portal (Mar 2023)",
-    description: "Developed a secure real estate portal within 24 hours featuring user verification to enhance transaction transparency.",
-    tools: "React, Node.js, Firebase",
-    image: "/images/sapphire.png",
-    github: "https://github.com/ary0912/Property-Portal",
-  },
-  {
-    title: "PLANITNOW",
-    category: "Productivity Web App (Mar 2023)",
-    description: "Designed a journaling and productivity web app integrating secure login, to-do lists, and time logs.",
-    tools: "MongoDB, Express.js, React, Node.js, JWT",
-    image: "/images/Maxlife.png",
-    github: "https://github.com/ary0912/PlanITNow",
+    title: "GoCart",
+    category: "UX Case Study (2024)",
+    description:
+      "Peer-to-peer platform designed through user research and iterative UX prototyping.",
+    impact:
+      "Improved usability through multiple testing and design iterations.",
+    tools: "Figma, UX Research",
+    features: ["UX", "Design Thinking"],
+    image: "/images/gocart.png",
+    behance: "https://www.behance.net/gallery/200088939/The-Grocery-App",
   },
 ];
 
@@ -227,9 +256,22 @@ const Work = () => {
                         <p className="carousel-description" style={{ marginTop: "12px", fontSize: "15px", color: "#adacac", lineHeight: "1.5", fontWeight: 300 }}>
                           {project.description}
                         </p>
+                        {project.impact && (
+                          <p className="carousel-impact" style={{ marginTop: "8px", fontSize: "14px", color: "#14b8a6", fontWeight: 400 }}>
+                            <strong>Impact:</strong> {project.impact}
+                          </p>
+                        )}
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>
-                          <p>{project.tools}</p>
+                          <p>
+                            {project.tools}
+                            {project.features && project.features.length > 0 && (
+                              <>
+                                <span style={{ margin: "0 10px", opacity: 0.3 }}>|</span>
+                                {project.features.join(", ")}
+                              </>
+                            )}
+                          </p>
                         </div>
                       </div>
                     </div>
